@@ -8,7 +8,6 @@ A few things research on couple budgeting converges on, which shaped this templa
 - **Structure: hybrid joint + personal.** The most common setup for couples now is a shared account/budget for household bills and goals, plus a personal "fun money" allowance each person can spend with zero questions asked. This is consistently the biggest lever for reducing money arguments — you don't need to itemize each other's coffee runs.
 - **Method: zero-based, loosely following 50/30/20 as a sanity check.** Every dollar of income gets assigned somewhere (needs, wants, savings/goals) so nothing "disappears." 50/30/20 (50% needs, 30% wants, 20% savings) is used below as a rough benchmark, not a hard rule — with two big savings goals (house + wedding) you'll likely want savings well above 20%.
 - **Category granularity: 15-25 categories, split only where it changes a decision.** Concretely: dining out is split out from groceries (one's stable/necessary, the other's variable/discretionary, and lumping them hides the thing you actually want to see). Broader "experiences"/entertainment stays as one line unless a specific sub-area is clearly a problem — you don't need "movies," "concerts," and "hobbies" as separate lines unless one of those is out of control.
-- **Contribution split:** if incomes differ, consider splitting shared expenses proportionally to income rather than strictly 50/50 — it's the split most couples with income gaps find fairest. There's a place to calculate this below.
 
 ## 1. Income (take-home / after-tax, monthly)
 
@@ -19,16 +18,7 @@ A few things research on couple budgeting converges on, which shaped this templa
 | **Total monthly income** | **$** | **$** |
 | **Combined household income** | **$** | |
 
-## 2. Contribution split (if not splitting shared costs 50/50)
-
-| | Kate | Lucas |
-|---|---|---|
-| % of combined income | % | % |
-| → Applies to shared/joint expenses below (Sections 3 & 4) if using proportional split | | |
-
-*If you'd rather just do 50/50 or fully joint, skip this and ignore the per-person columns further down.*
-
-## 3. Fixed Needs — target ~50% of income
+## 2. Fixed Needs — target ~50% of income
 
 | Category | Monthly Amount | Notes |
 |---|---|---|
@@ -46,7 +36,7 @@ A few things research on couple budgeting converges on, which shaped this templa
 | Childcare / pet care (if applicable) | $ | |
 | **Subtotal — Needs** | **$** | |
 
-## 4. Savings & Goals — zero-based, prioritize these explicitly
+## 3. Savings & Goals — zero-based, prioritize these explicitly
 
 | Category | Monthly Amount | Notes |
 |---|---|---|
@@ -59,7 +49,7 @@ A few things research on couple budgeting converges on, which shaped this templa
 | Extra debt paydown (beyond minimums) | $ | |
 | **Subtotal — Savings & Goals** | **$** | |
 
-## 5. Wants / Discretionary (shared) — target ~30% of income
+## 4. Wants / Discretionary (shared) — target ~30% of income
 
 | Category | Monthly Amount | Notes |
 |---|---|---|
@@ -72,7 +62,7 @@ A few things research on couple budgeting converges on, which shaped this templa
 | Personal care (haircuts, gym, etc. — shared/household level) | $ | |
 | **Subtotal — Shared Wants** | **$** | |
 
-## 6. Individual "Fun Money" — no itemizing, no questions asked
+## 5. Individual "Fun Money" — no itemizing, no questions asked
 
 | | Kate | Lucas |
 |---|---|---|
@@ -80,26 +70,26 @@ A few things research on couple budgeting converges on, which shaped this templa
 
 *This is the one category each of you spends freely without justifying to the other — covers whatever isn't worth tracking line-by-line (coffee, a solo purchase, etc.).*
 
-## 7. Zero-Based Check
+## 6. Zero-Based Check
 
 | | Amount |
 |---|---|
 | Total combined income (from Section 1) | $ |
-| minus Needs (Section 3 subtotal) | $ |
-| minus Savings & Goals (Section 4 subtotal) | $ |
-| minus Shared Wants (Section 5 subtotal) | $ |
-| minus Fun Money (Section 6, both people) | $ |
+| minus Needs (Section 2 subtotal) | $ |
+| minus Savings & Goals (Section 3 subtotal) | $ |
+| minus Shared Wants (Section 4 subtotal) | $ |
+| minus Fun Money (Section 5, both people) | $ |
 | **= Unassigned** | **$ (should be $0)** |
 
-If unassigned isn't $0: negative means cut something (usually Section 5); positive means assign the leftover — most likely to Section 4 (house/wedding funds) since those are the active goals.
+If unassigned isn't $0: negative means cut something (usually Section 4); positive means assign the leftover — most likely to Section 3 (house/wedding funds) since those are the active goals.
 
-## 8. Quick 50/30/20 sanity check (optional)
+## 7. Quick 50/30/20 sanity check (optional)
 
 | Bucket | Target % | Your % | Your $ |
 |---|---|---|---|
-| Needs (Section 3) | 50% | | |
-| Wants (Sections 5 + 6) | 30% | | |
-| Savings/Goals (Section 4) | 20%+ | | |
+| Needs (Section 2) | 50% | | |
+| Wants (Sections 4 + 5) | 30% | | |
+| Savings/Goals (Section 3) | 20%+ | | |
 
 Given the house + wedding goals, it's normal and expected for Savings/Goals to run above 20% and Wants to run below 30%.
 
