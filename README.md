@@ -8,6 +8,7 @@ Financial planning exercises for Kate & Lucas, done with Claude.
 2. **`02-future-budget/`** - Future budget planning for kids + homeownership.
 3. **`03-home-affordability/`** - What home price we can comfortably afford with 1-2 kids.
 4. **`04-2001-vs-2026-comparison/`** - Buying a home in 2001 (parents) vs. 2026 (us).
+5. **`05-seattle-condo-decision/`** - Keep or sell the existing Seattle condo.
 
 ## Shared
 

@@ -16,6 +16,7 @@ This repo holds financial planning exercises for **Kate & Lucas** (a couple), wo
 - `02-future-budget/` - budget projected forward assuming kids + a home purchase.
 - `03-home-affordability/` - comfortable home price given 1-2 kids.
 - `04-2001-vs-2026-comparison/` - parents' 2001 purchase vs. today.
+- `05-seattle-condo-decision/` - keep or sell the existing Seattle condo.
 
 ## Working notes
 
