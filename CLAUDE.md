@@ -23,6 +23,7 @@ This repo holds financial planning exercises for **Kate & Lucas** (a couple), wo
 ## Working notes
 
 - `01` through `06` have real content as of July 2026. Each analysis document cites its sources and, where it depends on another document's numbers, states exactly which section those numbers came from.
+- Each folder's `README.md` holds the full report directly, so GitHub's folder-level README rendering shows the actual content immediately, rather than a pointer to a separate file. `02-future-budget/README.md` is a single merged document with two parts (Part 1: Adult Budget, Part 2: Child Budget); cross-references between the two parts use "Part 1"/"Part 2" rather than the old separate filenames.
 - Tone across all analysis documents: neutral and objective. No persuasive framing, no advice-toned verdicts, no rhetorical questions. State what the numbers show and cite every external data point with a source and date.
 - Format: every calculation is explained in bullet points before the table of resulting numbers, not the other way around. No em dashes.
 - When filling in or revising an exercise, update `shared/assumptions.md` first if it introduces a new assumption other exercises should reuse, and check `shared/known-modeling-issues.md` so past mistakes aren't repeated.

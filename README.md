@@ -17,4 +17,4 @@ Financial planning exercises for Kate & Lucas, done with Claude.
 
 ## Status
 
-`01` through `06` have content. Each analysis document states its sources and which upstream documents it pulls numbers from.
+`01` through `06` have content. Each folder's `README.md` is the report itself (not a pointer to a separate file), so it renders automatically when browsing that folder on GitHub. Each analysis document states its sources and which upstream documents it pulls numbers from.
