@@ -1,15 +1,11 @@
 # 2001 vs. 2026 Home Purchase Comparison: Parents' Ann Arbor Purchase vs. Kate & Lucas's Portland Target
 
-## Correction note
-
-A prior draft of this analysis contained a factual error: one file identified the parents' home location as Ann Arbor, Michigan, and another as Seattle, Washington. This has been confirmed directly with the family. The correct location is **4663 Erin Court, Ann Arbor, Michigan**, purchased in 2001. Michigan is a flat-rate state income tax state, not a no-income-tax state like Washington. The prior draft's use of Washington's zero state income tax was incorrect and materially overstated the parents' after-tax income advantage. This version uses Michigan's actual 2001 flat income tax rate throughout.
+Compares the parents' 2001 home purchase in Ann Arbor, Michigan to Kate & Lucas's 2026 Portland, OR home target across price-to-income, taxes, inflation, childcare, healthcare, and retirement context.
 
 ## Inputs used (confirmed facts)
 
 - Parents: 4663 Erin Court, Ann Arbor, Michigan. Purchased 2001 for $540,000. Combined household income at the time: $177,500/yr. State: Michigan (flat-rate income tax).
 - Kate & Lucas: targeting a $600,000 to $800,000 Portland, OR home in 2026. Combined gross income: $308,520/yr (Kate $165,000 + Lucas $143,520). Down payment pool: $200,000 actual dollars. Filing status: Married Filing Jointly for both households (assumed for the parents, since MFJ is the applicable status for a two-earner married couple; not separately confirmed but the standard assumption for this analysis).
-
-All figures below are calculated, not carried forward from the earlier draft. Sources and dates are cited for every external data point.
 
 ---
 

@@ -1,12 +1,6 @@
 # Home Affordability Analysis: Portland, OR
 
-**Note on document scope (restructuring, July 2026):** This document covers home-purchase cost mechanics only: after-tax household income by scenario, all-in monthly housing cost by price point, closing costs, and mortgage-rate sensitivity on housing cost itself. Child-rearing costs (childcare, children's health insurance premium, and baseline living expense scaling by child count) are modeled separately in `02-future-budget/README.md` (Part 2, Child Budget). The combined affordability verdict, the combined monthly cash flow view, and emergency fund runway under income-loss scenarios are addressed in `06-affordability-assessment/README.md`, which combines the home-cost figures here with the child-cost figures from `02-future-budget/README.md` (Part 2, Child Budget) and applies standard affordability rules of thumb.
-
-Prepared for Kate and Lucas. Covers after-tax income under multiple employment scenarios, all-in monthly housing cost at five price points, closing costs, and mortgage-rate sensitivity on housing cost. All dollar figures are nominal (2026 dollars), monthly unless stated otherwise. All arithmetic was computed in a Python script and checked against hand-verified sample calculations before being placed in these tables (see Method notes under each section).
-
-This document supersedes an earlier draft that contained calculation errors and persuasive framing (see `shared/known-modeling-issues.md`). Figures here are independently derived and cited; no numbers were carried forward from the earlier draft.
-
-Inputs taken as given from `shared/assumptions.md`: Kate $165,000/yr gross, Lucas $143,520/yr gross, Married Filing Jointly, $200,000 actual down payment (not a 20% assumption), $70,000 emergency fund held separately from the down payment.
+This document covers after-tax household income by scenario, all-in monthly housing cost by price point, closing costs, and mortgage-rate sensitivity on housing cost, for Kate and Lucas's home purchase based on the inputs in `shared/assumptions.md` (Kate $165,000/yr gross, Lucas $143,520/yr gross, Married Filing Jointly, $200,000 actual down payment, $70,000 emergency fund held separately).
 
 ---
 
@@ -18,7 +12,7 @@ Inputs taken as given from `shared/assumptions.md`: Kate $165,000/yr gross, Luca
 - Oregon tax: 2026 Married Filing Jointly brackets and standard deduction ($5,820), per Oregon Department of Revenue, *Oregon Withholding Tax Formulas* (Publication 150-206-436, effective January 1, 2026).
   - **Simplification stated explicitly:** this model does not apply Oregon's federal-tax subtraction (a below-the-line adjustment for federal tax paid). Per the same DOR publication, that subtraction phases out entirely for a married household with combined wages at or above $290,000, which covers the two-income scenario (combined gross $308,520). It would apply partially in the single-income scenarios below, so Oregon tax in those rows is a slight overestimate (on the order of a few hundred dollars a year), not an underestimate.
 - FICA: Social Security at 6.2% applied separately to each spouse's own wages up to the 2026 wage base of $184,500 per person (Social Security Administration, 2026 wage base); Medicare at 1.45% on all wages, no cap; Additional Medicare Tax of 0.9% on combined household Medicare wages above the $250,000 Married Filing Jointly threshold (IRS Topic No. 751, 2026 parameters).
-  - **Modeling correction versus the prior draft:** traditional pre-tax 401(k) contributions reduce federal and Oregon taxable wages but do **not** reduce Social Security or Medicare wages. This model applies FICA to gross wages before any 401(k) deferral, which is the correct treatment.
+  - **Modeling correction:** traditional pre-tax 401(k) contributions reduce federal and Oregon taxable wages but do **not** reduce Social Security or Medicare wages. This model applies FICA to gross wages before any 401(k) deferral, which is the correct treatment.
 - Retirement contributions modeled at three levels, applied per working spouse (pre-tax traditional 401(k)):
   - **Max**: $24,500/year per person, the 2026 IRS elective deferral limit (IRS, "401(k) limit increases to $24,500 for 2026," 2026). In any scenario with only one earner, "max" reflects only that one person's ability to contribute (never an invented combined figure).
   - **Partial**: 6% of gross salary per working spouse (a stated modeling assumption, not a researched figure).
@@ -133,8 +127,6 @@ The $200,000 down payment pool is fully consumed by the down payment itself, per
 | $750,000 | $19,347 | $50,653 | 72.4% |
 | $800,000 | $20,696 | $49,304 | 70.4% |
 
-The corresponding emergency fund runway in months, and how this reduced balance interacts with income-loss scenarios, is addressed in `06-affordability-assessment/README.md` alongside the combined cash flow picture.
-
 ---
 
 ## 3. Mortgage Rate Sensitivity
@@ -144,7 +136,6 @@ The corresponding emergency fund runway in months, and how this reduced balance 
 - Base case: 6.55% (Freddie Mac PMMS, week ending July 16, 2026).
 - Two stress rates are shown: **+100 basis points (7.55%)** and **+200 basis points (8.55%)**. These increments were chosen because 30-year fixed rates have moved by more than 200 basis points within multi-year windows in the recent past (from roughly 3% in 2021 to nearly 8% at the October 2023 peak, per Freddie Mac/FRED historical series), so a 100-200 bps difference between the rate assumed today and the rate actually available at closing is a plausible planning range, not an extreme tail scenario.
 - All other housing cost components (property tax, insurance, maintenance, utilities) are held constant across rate scenarios; only P&I changes. Since PMI does not apply at any price point modeled (Section 2), it stays at $0 across all rate scenarios as well.
-- This section shows the effect of rate changes on housing cost alone. It does not net housing cost against income, childcare, or any other cost line; that combined view is built in `06-affordability-assessment/README.md`.
 
 ### P&I by Price and Rate
 
@@ -187,7 +178,3 @@ A 200 basis point rate increase raises the total all-in monthly housing cost by 
 - JVM Lending, "Typical Closing Costs in Oregon for Buyers and Sellers," 2026: https://www.jvmlending.com/blog/typical-closing-costs-in-oregon-for-buyers-and-sellers/
 - Sammamish Mortgage, "Average Closing Costs for Home Buyers in Oregon 2026": https://www.sammamishmortgage.com/average-buyer-closing-costs-oregon/
 - Quill Title, "Oregon Real Estate Closing Guide" (escrow fee convention): https://www.quilltc.com/blog/oregon-real-estate-closing-guide
-
-## Method Notes Addressed From Known Modeling Issues
-
-This document addresses the subset of issues in `shared/known-modeling-issues.md` relevant to home-purchase cost mechanics; issues specific to childcare, children's health insurance, baseline living expenses, combined cash flow, and emergency fund runway are addressed in `02-future-budget/README.md` (Part 2, Child Budget) and `06-affordability-assessment/README.md` instead. In particular: Married Filing Jointly brackets are used throughout (issue 3); both spouses' FICA wage bases and the Additional Medicare Tax are applied correctly, including the correction that 401(k) deferrals do not reduce FICA wages (issue 4); closing costs are itemized and shown reducing the emergency fund balance (issue 5); job-loss/reduced-income scenarios use each partner's actual salary or an explicitly labeled hypothetical, never an unstated floor (issues 9, 11); max retirement contributions in reduced-income scenarios are flagged as theoretical (issue 10); homeowners insurance is scaled to the modeled home value with a stated wildfire-pressure loading, not a national average (issue 14); the "both shift to lower-paying jobs" scenario is split into a transition period and a settled state (issue 15); external cost estimates (mortgage rate, property tax, insurance, closing costs) are checked against current, cited sources rather than carried forward as round numbers (issue 19); and the prose throughout states scenario mechanics neutrally, without persuasive or advice-toned framing (issue 20).

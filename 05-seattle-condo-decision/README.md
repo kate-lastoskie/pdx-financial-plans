@@ -2,9 +2,7 @@
 
 Property: 1740 NE 86th St #319, Maple Leaf, Seattle, WA 98115 ("Lakeside North" building). 641 sq ft, 1BR/1BA, elevator building, in-unit washer/dryer, covered parking, built 1982. Purchased August 2022 for $339,000. Remaining loan balance $305,000.
 
-This analysis covers carrying costs, rental economics, tax mechanics, sale economics, a 5-year hold-vs-sell comparison, and how the decision interacts with the Portland home purchase. It presents figures for the reader to evaluate; it does not recommend a course of action.
-
-Prepared July 2026. All dollar figures rounded to the nearest whole dollar unless noted. All external data points are cited with source and date at first use.
+This document covers carrying costs, rental economics, tax mechanics, sale economics, a 5-year hold-vs-sell comparison, and how the decision interacts with the Portland home purchase.
 
 ---
 
@@ -89,7 +87,7 @@ In every scenario researched, monthly rent (even before vacancy or management fe
 | Estimated depreciable basis (85% building) | $288,150 |
 | Annual depreciation (27.5-yr straight-line) | $10,478 |
 
-**Passive activity loss limitation (a material point the prior version did not address):**
+**Passive activity loss limitation:**
 - Rental real estate losses are classified as passive losses under IRC Section 469. There is a special allowance of up to $25,000/year for actively-participating owners, but it phases out as modified adjusted gross income (MAGI) rises from $100,000 to $150,000, and is fully eliminated at MAGI of $150,000 or more (IRS Publication 925, 2025 edition, accessed Jul 2026).
 - The household's combined gross income is $308,520/year (per `shared/assumptions.md`), well above the $150,000 phase-out ceiling.
 - Practical effect: because depreciation (~$10,478/year) is large relative to the near-breakeven-to-negative cash flow shown in Section 2, the rental is likely to show a tax loss on paper in most of the scenarios modeled. At this household's income level, that loss is not currently deductible against W-2 wages. It becomes a suspended passive loss that carries forward and can only offset passive income in future years or be released against gain when the property is eventually sold.
@@ -232,7 +230,7 @@ This matrix does not include the depreciation-recapture tax effect on the value-
 | Base ($300,000 sale) | -$28,900 | $171,100 |
 | Optimistic ($325,000 sale) | -$5,725 | $194,275 |
 
-A reduced down payment pool means a larger mortgage loan amount on the Portland purchase (at whatever price point is chosen in that range), which increases the Portland monthly mortgage payment. This analysis does not compute the resulting Portland mortgage payment; that calculation belongs to the home-affordability analysis (`03-home-affordability/`), which should treat the down payment pool as a variable input rather than a fixed $200,000 if the condo is sold at a shortfall.
+A reduced down payment pool means a larger mortgage loan amount on the Portland purchase (at whatever price point is chosen in that range), which increases the Portland monthly mortgage payment. The resulting Portland mortgage payment is calculated in the home-affordability analysis (`03-home-affordability/`), which should treat the down payment pool as a variable input rather than a fixed $200,000 if the condo is sold at a shortfall.
 
 **Mechanics if kept as a rental:**
 - The condo's carrying cost continues regardless of whether it is rented (Section 1: $2,735/month).

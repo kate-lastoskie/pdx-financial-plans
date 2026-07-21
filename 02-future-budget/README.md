@@ -6,17 +6,9 @@ Future household budget for Kate & Lucas, in two parts: an adult-only budget (a 
 
 **Future Adult Budget - Kate & Lucas (Fillable Template)**
 
-This is the adult-only half of the future household budget: everything the same as `01-current-budget/`'s current budget, but for the future state once the Portland home is purchased and (eventually) children are in the picture. It deliberately excludes child-specific costs (those live in Part 2, Child Budget, below) so the two can be filled in and revisited independently without double-counting.
+This is the adult-only half of the future household budget: everything the same as `01-current-budget/`'s current budget, but for the future state once the Portland home is purchased, excluding child-specific costs (tracked separately in Part 2, Child Budget, below).
 
 Leave this blank until it's useful to fill in. Two natural trigger points: once a specific home price is chosen (see `06-affordability-assessment/`, which tests $600K-$800K against affordability rules of thumb), and once children's ages are clearer (so the right phase total from Part 2 (Child Budget) can be pulled in).
-
-### Methodology (same as the current budget, carried forward)
-
-- **Cadence:** monthly, with a recurring money date to review it together.
-- **Structure: hybrid joint + personal.** Shared categories below, plus individual "fun money" each person spends without justifying to the other.
-- **Method: zero-based**, loosely checked against 50/30/20.
-- **Category granularity:** dining out stays separate from groceries; broad "entertainment" stays one line unless a specific sub-area is a known problem.
-- **What changed from the current budget:** the house-down-payment and wedding savings goals are gone (assumed complete by the time this applies). Housing shifts from rent to mortgage + the full ownership cost stack. Two things the current budget didn't explicitly separate out are called out here on their own lines, since they were easy to lose track of: **family vacation** and **entertaining at home** (hosting, as distinct from going out). All child-specific spending (childcare, food, clothing, camps, activities, kid-specific vacation add-ons) is deliberately out of scope here; it's tracked in Part 2 (Child Budget), below, and pulled in as a single reference line in Section 5 below, so this document stays adults-only.
 
 ### 1. Income (take-home / after-tax, monthly)
 
@@ -119,20 +111,16 @@ Child-related costs (Section 6) are grouped with Needs for this check, on the re
 
 **Child Budget: Cost of Raising Two Children (2-Year Gap), Birth Through Age 18**
 
-**Supersession note:** This document (Part 2 of this folder's budget) supersedes an earlier, now-removed `02-future-budget/analysis.md` document in full. This version carries forward the prior document's childcare-by-phase and children's health insurance premium figures (re-verified, unchanged), and extends the analysis in two ways. First, it adds three cost categories the prior version did not model at all: food, clothing, and entertainment/activities, broken out by child age band. Second, it extends the modeled window from ages 0-12 to ages 0-17 (birth through age 17, matching the age range used by the standard government reference for this kind of estimate), adding summer camp, youth sports/extracurricular, and child-attributable vacation costs for the school-age and teen years that the prior version stopped short of covering.
-
-Prepared for Kate and Lucas. Scope: what raising two children, born 2 years apart, actually costs in the dollars of the year each cost is incurred, covering childcare, children's health insurance, food, clothing, entertainment/activities, summer camps, youth sports, and the child-specific incremental cost of family vacations. This is an input document; `06-affordability-assessment/README.md` should cite specific figures from Section 10 rather than re-deriving them. All arithmetic (compound inflation projections, cumulative totals) was computed in a Python script and cross-checked before being placed in these tables.
-
-This document does **not** cover: housing/mortgage costs (see `03-home-affordability/README.md`), the Seattle condo carrying cost (see `05-seattle-condo-decision/README.md`), or adult/household-level costs including the adults' own vacation budget and the adult baseline living-expense floor that applies regardless of child count (see Part 1, Adult Budget, above). An earlier, now-removed version of this document (`02-future-budget/analysis.md`) included a placeholder adult baseline living-expense line (a flat $3,000/month, 0-children figure); that line item is being relocated to Part 1 (Adult Budget) as part of this revision and is out of scope here. Anyone updating `06-affordability-assessment/README.md` to depend on this document should source the adult baseline from Part 1 (Adult Budget) going forward, not from this file.
+Prepared for Kate and Lucas. Scope: what raising two children, born 2 years apart, actually costs in the dollars of the year each cost is incurred, covering childcare, children's health insurance, food, clothing, entertainment/activities, summer camps, youth sports, and the child-specific incremental cost of family vacations; `06-affordability-assessment/README.md` should cite figures from Section 10 rather than re-deriving them.
 
 ---
 
 ### 1. Timeline and Method Overview
 
-- **Birth years are not specified in `shared/assumptions.md`.** As in the prior version, this document assumes, as a stated modeling choice: **Child A born 2027, Child B born 2029** (a 2-year gap). If the household's actual timeline differs, every phase below shifts by the same number of years; the today's-dollars figures and per-year inflation factors (Section 8) remain usable, only the calendar-year labels would change.
-- Per `shared/known-modeling-issues.md` (issue 2), a 2-year gap means Child A is already in the preschool-age range by the time Child B is born as an infant. The two children are never simultaneously in infant care. This is unchanged from the prior version.
-- The modeled window now runs **2027 through 2044**, i.e., Child A's age 0 through age 17 (birth through age 17), an 18-calendar-year window. This matches the age range used by the standard government reference for child-rearing cost estimates (USDA, birth through age 17; see Section 4) and is the "roughly 18-20 year window" called for in expanding this document's scope. The prior version's window (2027-2038, ages 0-11) is a subset of this window and its figures are reproduced unchanged within it (verified in Section 9).
-- Eight phases are used, defined by Child A's age (Child B's age follows automatically from the 2-year gap). Phases 1-5 are unchanged from the prior version; phases 6-8 are new.
+- **Birth years are not specified in `shared/assumptions.md`.** This document assumes, as a stated modeling choice: **Child A born 2027, Child B born 2029** (a 2-year gap). If the household's actual timeline differs, every phase below shifts by the same number of years; the today's-dollars figures and per-year inflation factors (Section 8) remain usable, only the calendar-year labels would change.
+- Per `shared/known-modeling-issues.md` (issue 2), a 2-year gap means Child A is already in the preschool-age range by the time Child B is born as an infant. The two children are never simultaneously in infant care.
+- The modeled window runs **2027 through 2044**, i.e., Child A's age 0 through age 17 (birth through age 17), an 18-calendar-year window, matching the age range used by the standard government reference for child-rearing cost estimates (USDA, birth through age 17; see Section 4).
+- Eight phases are used, defined by Child A's age (Child B's age follows automatically from the 2-year gap).
 
 | Phase | Child A age | Child B age | Calendar years | Description |
 |---|---|---|---|---|
@@ -147,15 +135,14 @@ This document does **not** cover: housing/mortgage costs (see `03-home-affordabi
 
 ---
 
-### 2. Childcare Costs by Phase (Carried Forward, Re-Verified)
+### 2. Childcare Costs by Phase
 
 #### Method
 
-- Figures below are unchanged from the prior version of this document. They were re-checked against the same source basis and remain a reasonable current (2026) estimate; no update was needed.
 - Center-based daycare rates, Multnomah County / Portland, 2026 dollars: infant care **$1,750/month**, preschool (age ~2-4) **$1,200/month**, school-age after-care (age 5-11) **$750/month** (daycarecostguide.com, childcarecost.org, daycarecalc.com, nannylane.com, Portland/Multnomah County data, 2026).
-- These are daycare-center prices. Alternative arrangements cost meaningfully more: nanny share roughly $1,500-$2,600/month per family; private full-time nanny roughly $4,000/month (care.com, nannylane.com, 2026). Neither is carried into the totals below, consistent with the prior version's treatment.
+- These are daycare-center prices. Alternative arrangements cost meaningfully more: nanny share roughly $1,500-$2,600/month per family; private full-time nanny roughly $4,000/month (care.com, nannylane.com, 2026). Neither is carried into the totals below.
 - Multnomah County's "Preschool for All" program offers free preschool for eligible 3- and 4-year-olds and could reduce the preschool-phase figure for a qualifying, enrolled family. Not built into the $1,200/month figure, which reflects private-pay center care.
-- **New in this version:** formal after-school childcare is modeled only through age 11 (elementary school). Starting age 12 (middle school), this document models $0 in formal childcare/aftercare, on the stated assumption that pre-teens and teens typically require less structured daily supervision than younger children. Their daytime coverage during school breaks, and their structured extracurricular time, is instead captured in Section 7 (summer camps, youth sports) rather than as a fixed monthly childcare-vendor cost. This is a modeling choice, stated explicitly, not a claim that all households eliminate paid supervision at exactly age 12.
+- Formal after-school childcare is modeled only through age 11 (elementary school). Starting age 12 (middle school), this document models $0 in formal childcare/aftercare, on the stated assumption that pre-teens and teens typically require less structured daily supervision than younger children. Their daytime coverage during school breaks, and their structured extracurricular time, is instead captured in Section 7 (summer camps, youth sports) rather than as a fixed monthly childcare-vendor cost. This is a modeling choice, stated explicitly, not a claim that all households eliminate paid supervision at exactly age 12.
 
 #### Monthly Childcare Cost by Phase, Two Children (2026 dollars, center-based care where applicable)
 
@@ -172,12 +159,12 @@ This document does **not** cover: housing/mortgage costs (see `03-home-affordabi
 
 ---
 
-### 3. Children's Health Insurance Premium (Carried Forward, Re-Verified)
+### 3. Children's Health Insurance Premium
 
 #### Method
 
-- Figures unchanged from the prior version. KFF 2025 Employer Health Benefits Survey (KFF, 2025) reports an average annual family-coverage premium of $26,993, employee contribution averaging $6,850/year ($571/month) for full family coverage. The child-specific increment (as opposed to a spouse) commonly falls in a $200-$425/month range for one or two children combined (eHealth, moneygeek.com, 2026 summaries).
-- This document uses **$250/month for one child** and **$350/month for two children**, a stated point estimate within the cited range, held flat across all phases and all ages (health insurance premiums do not vary by child age the way other categories do). KFF's survey series shows employer family-premium growth has historically outpaced general CPI; the general-inflation rate applied to this line in Section 9 is a conservative (likely lower-bound) projection for this specific cost, as noted in the prior version.
+- KFF 2025 Employer Health Benefits Survey (KFF, 2025) reports an average annual family-coverage premium of $26,993, employee contribution averaging $6,850/year ($571/month) for full family coverage. The child-specific increment (as opposed to a spouse) commonly falls in a $200-$425/month range for one or two children combined (eHealth, moneygeek.com, 2026 summaries).
+- This document uses **$250/month for one child** and **$350/month for two children**, a stated point estimate within the cited range, held flat across all phases and all ages (health insurance premiums do not vary by child age the way other categories do). KFF's survey series shows employer family-premium growth has historically outpaced general CPI; the general-inflation rate applied to this line in Section 9 is a conservative (likely lower-bound) projection for this specific cost.
 
 | Number of children | Monthly premium (2026 $) |
 |---|---|
@@ -186,7 +173,7 @@ This document does **not** cover: housing/mortgage costs (see `03-home-affordabi
 
 ---
 
-### 4. Food Costs by Age Band (New)
+### 4. Food Costs by Age Band
 
 #### Method
 
@@ -210,7 +197,7 @@ This document does **not** cover: housing/mortgage costs (see `03-home-affordabi
 
 ---
 
-### 5. Clothing Costs by Age Band (New)
+### 5. Clothing Costs by Age Band
 
 #### Method
 
@@ -232,7 +219,7 @@ This document does **not** cover: housing/mortgage costs (see `03-home-affordabi
 
 ---
 
-### 6. Everyday Entertainment and Miscellaneous Costs by Age Band (New)
+### 6. Everyday Entertainment and Miscellaneous Costs by Age Band
 
 #### Method
 
@@ -254,13 +241,11 @@ This document does **not** cover: housing/mortgage costs (see `03-home-affordabi
 
 ---
 
-### 7. School-Age and Teen Cost Categories: Camps, Sports, and Child-Attributable Vacation Costs (New)
-
-This section covers the main scope gap in the prior version of this document, which stopped at age 12 and did not model these categories at all.
+### 7. School-Age and Teen Cost Categories: Camps, Sports, and Child-Attributable Vacation Costs
 
 #### 7.1 Summer Camps
 
-- Method: once a child is in elementary school (age 5+), a working household typically needs paid coverage for some portion of summer break beyond what the school-year childcare/aftercare arrangement provides. This document models **day camp**, not overnight/sleepaway camp, as the baseline cost, consistent with how the prior version treated nanny/nanny-share as a costlier alternative to center-based daycare rather than the modeled baseline.
+- Method: once a child is in elementary school (age 5+), a working household typically needs paid coverage for some portion of summer break beyond what the school-year childcare/aftercare arrangement provides. This document models **day camp**, not overnight/sleepaway camp, as the baseline cost.
 - Portland-area day camp rates, 2026: Portland Parks & Recreation Nature Day Camp (ages 5-12), $300/resident 5-day week (portland.gov, 2026); OMSI (Oregon Museum of Science and Industry) camps, $550-$800/week (omsi.edu/camps; projectkids.io review of 2026 OMSI pricing); Champ Camp Great Outdoors at University of Portland, $475/week (discoverchampions.com, 2026). Averaging these three programs (using the OMSI range's midpoint, $675/week) gives approximately $483/week, rounded to **$480/week**, used below.
 - Overnight/sleepaway camp is materially more expensive and is not built into the totals below, noted here as a costlier alternative: national average around $1,257/week, with a typical range of $850-$2,600/week (SummerCamps.com, 2026). No Portland-specific overnight camp data was found within the scope of this analysis; the national figures are used and labeled as such.
 - Coverage assumption (stated modeling choice, not sourced): **8 weeks of day camp per summer for ages 5-13** (elementary and middle school), tapering to **2 weeks per summer for ages 14-17** (high school), reflecting typical increased independence, part-time work, or unpaid activity involvement among teens that reduces (but does not eliminate) the need for paid daytime coverage. No child-specific camp cost is modeled for ages 0-4; toddler/preschool entertainment and activity costs are captured in Section 6.
@@ -269,12 +254,12 @@ This section covers the main scope gap in the prior version of this document, wh
 
 - Method: the Aspen Institute's Project Play 2025 survey found the average U.S. sports family spent $1,016/year on a child's primary sport plus an additional $475/year on other sports/activities for that child, for a combined figure "nearly $1,500 annually per child" (Project Play, "Family spending on youth sports rises 46% over five years," February 2025, projectplay.org).
 - This document uses **$1,500/year per child** for ages 5-17 (organized sports typically begin around kindergarten age), and $0 for ages 0-4 (folded into the Section 6 entertainment/misc figure, which already covers toys and unstructured play for younger children).
-- Caveat: the same Project Play survey found youth sports spending rose approximately 46% over the five years from 2019 to 2024, roughly 7.9%/year on average, well above general CPI inflation over that period. This document does not build a separate elevated inflation rate for this line item (Section 8 explains the reasoning), but this is flagged as a caveat in the same way the prior version flagged health-insurance-premium growth as likely running ahead of the general-inflation assumption used to project it.
+- Caveat: the same Project Play survey found youth sports spending rose approximately 46% over the five years from 2019 to 2024, roughly 7.9%/year on average, well above general CPI inflation over that period. This document does not build a separate elevated inflation rate for this line item; Section 8 explains the reasoning. This is flagged as a caveat, similar to how health-insurance-premium growth (Section 3) is likely running ahead of the general-inflation assumption used to project it.
 
 #### 7.3 Child-Attributable Vacation Costs
 
 - **Scope note, stated explicitly to avoid double-counting:** this line item captures only the incremental, child-specific cost of family travel (an additional plane ticket per child, per-child add-ons for kid-focused activities/attractions), not the family's overall vacation budget. The adults' own vacation budgeting, and the shared costs of a family trip (lodging, a rental car, adult transportation), are addressed in Part 1 (Adult Budget), above. Including the full family vacation cost here, on top of whatever Part 1 models, would double-count the trip.
-- Method: the U.S. Bureau of Transportation Statistics reports a 2025 annual average domestic itinerary (round-trip) air fare of $387 (BTS, "2025 Annual Average Domestic Air Fare Decreases from 2024," bts.gov). Rounded to $390 per child per year (one primary trip requiring a plane ticket, a stated modeling simplification), plus a reasoned estimate of $150/year per child for kid-specific activity or attraction add-ons (theme park child admission increment, kids'-menu premium, etc.; no single authoritative source was found for this sub-piece, consistent with how the prior version's baseline-living build-up handled unsourced line items).
+- Method: the U.S. Bureau of Transportation Statistics reports a 2025 annual average domestic itinerary (round-trip) air fare of $387 (BTS, "2025 Annual Average Domestic Air Fare Decreases from 2024," bts.gov). Rounded to $390 per child per year (one primary trip requiring a plane ticket, a stated modeling simplification), plus a reasoned estimate of $150/year per child for kid-specific activity or attraction add-ons (theme park child admission increment, kids'-menu premium, etc.; no single authoritative source was found for this sub-piece).
 - Combined: **$540/year per child for ages 3-17**. For ages 0-2, this document assumes **$0**, on the basis that lap infants (under age 2) typically fly free or at a small fraction of an adult fare on domestic itineraries, and that a 2-year-old's incremental activity/attraction cost is minimal. This is a simplification; households that purchase a seat for a child under 2 would see a higher actual cost.
 
 #### Camp / Sports / Vacation Cost by Age, Per Child (2026 dollars, annual and monthly-equivalent)
@@ -285,24 +270,19 @@ This section covers the main scope gap in the prior version of this document, wh
 | 5-13 | $3,840 | $1,500 | $540 | $5,880 | $490 |
 | 14-17 | $960 | $1,500 | $540 | $3,000 | $250 |
 
-- Monthly-equivalent figures spread the annual cost evenly across 12 months for consistency with the monthly tables elsewhere in this document. Camp and vacation costs are not actually billed monthly; they are seasonal/lump costs, averaged here for comparability, the same convention the prior version used for annualized categories.
+- Monthly-equivalent figures spread the annual cost evenly across 12 months for consistency with the monthly tables elsewhere in this document. Camp and vacation costs are not actually billed monthly; they are seasonal/lump costs, averaged here for comparability.
 
 ---
 
 ### 8. Inflation Assumptions
 
-#### Carried forward, unchanged
-
-- **General inflation: 3.0%/year**, compounded annually. Applied to children's health insurance premiums (Section 3), as in the prior version.
-- **Childcare-specific inflation: 4.5%/year**, compounded annually (general inflation + 1.5 percentage points, per historical childcare-vs-CPI excess growth documented in this repository's `04-2001-vs-2026-comparison/README.md` and corroborated by Axios, The Hill, and Bank of America Institute reporting cited in the prior version). Applied to childcare/aftercare costs (Section 2).
+- **General inflation: 3.0%/year**, compounded annually. Applied to children's health insurance premiums (Section 3).
+- **Childcare-specific inflation: 4.5%/year**, compounded annually (general inflation + 1.5 percentage points, per historical childcare-vs-CPI excess growth documented in this repository's `04-2001-vs-2026-comparison/README.md` and corroborated by Axios, The Hill, and Bank of America Institute reporting). Applied to childcare/aftercare costs (Section 2).
 - Underlying general-inflation basis: BLS CPI-U 12-month change, June 2026: 3.5% (BLS CPI news release, published July 14, 2026); Federal Reserve longer-run objective: 2% on the PCE index. The 3.0%/year assumption remains a stated planning midpoint between these two figures, not a forecast of either.
-
-#### New in this version: food, clothing, entertainment, camps, sports, and vacation increment
-
-- **This document applies the general inflation rate (3.0%/year) to all six new categories** (food, clothing, entertainment/misc, camps, sports, vacation increment), rather than building a separate elevated rate for any of them, for the following stated reasons:
-  - Food, apparel, and recreation are all tracked as their own major components within the BLS CPI-U basket, and none of them has the kind of well-documented, sustained divergence from headline CPI that childcare/preschool services have shown (which is why childcare alone gets its own elevated rate in this document, both in the prior version and here).
+- **This document applies the general inflation rate (3.0%/year) to food, clothing, entertainment/misc, camps, sports, and the vacation increment**, rather than building a separate elevated rate for any of them, for the following stated reasons:
+  - Food, apparel, and recreation are all tracked as their own major components within the BLS CPI-U basket, and none of them has the kind of well-documented, sustained divergence from headline CPI that childcare/preschool services have shown (which is why childcare alone gets its own elevated rate in this document).
   - Applying a third, separately-justified inflation rate to a subset of categories (e.g., camps and sports but not food and clothing) would add modeling complexity without a correspondingly strong evidence base across all of those categories; the youth-sports-specific data point available (Section 7.2) is a single five-year survey window, not a multi-year, multi-source pattern of the kind documented for childcare.
-- **Caveat, stated explicitly:** the Project Play youth sports survey (Section 7.2) found sports-specific costs rising around 7.9%/year on average over 2019-2024, well above the 3.0%/year general rate used here. If that pattern continues, the nominal figures in Section 9 for the sports line item specifically would understate actual future cost. This is the same treatment the prior version gave to the health insurance premium line (general rate used, with a stated caveat that actual growth has historically run higher).
+- **Caveat, stated explicitly:** the Project Play youth sports survey (Section 7.2) found sports-specific costs rising around 7.9%/year on average over 2019-2024, well above the 3.0%/year general rate used here. If that pattern continues, the nominal figures in Section 9 for the sports line item specifically would understate actual future cost.
 
 | Cost category | Annual inflation assumption | Basis |
 |---|---|---|
@@ -322,7 +302,7 @@ This section covers the main scope gap in the prior version of this document, wh
 #### Method
 
 - Base year for all "today's dollars" figures: **2026**.
-- Because this version adds age-banded categories (food, clothing, entertainment, camps, sports, vacation) that can change from one year to the next even within a single multi-year phase (a child can cross a USDA age-band boundary mid-phase), today's-dollar totals are no longer flat across an entire phase the way they were in the prior version, which only had three flat-within-phase categories. Both a **phase-start** and **phase-end** figure are shown, in both today's dollars and nominal (inflation-projected) dollars, to capture this.
+- Because the age-banded categories (food, clothing, entertainment, camps, sports, vacation) can change from one year to the next even within a single multi-year phase (a child can cross a USDA age-band boundary mid-phase), today's-dollar totals are not flat across an entire phase. Both a **phase-start** and **phase-end** figure are shown, in both today's dollars and nominal (inflation-projected) dollars, to capture this.
 - Nominal dollars: inflation factor = (1 + annual rate)^(calendar year minus 2026), applied separately at the childcare rate (4.5%) to the childcare line and at the general rate (3.0%) to every other line, then summed.
 - All calculations were run in Python; the full year-by-year detail underlying the phase tables follows.
 
@@ -381,14 +361,12 @@ This section covers the main scope gap in the prior version of this document, wh
 
 #### Cumulative Totals
 
-- Method: annual cost = monthly total x 12 for each calendar year, summed. The today's-dollars total uses each year's own today's-dollar monthly figure (which, per the method note above, can already vary year to year within this version due to age-band transitions, unlike the prior version). The nominal total uses each year's own inflation-adjusted monthly figure.
+- Method: annual cost = monthly total x 12 for each calendar year, summed. The today's-dollars total uses each year's own today's-dollar monthly figure. The nominal total uses each year's own inflation-adjusted monthly figure.
 
 | Window | Cumulative, today's (2026) dollars | Cumulative, nominal (inflated) dollars |
 |---|---|---|
-| 12-year window (2027-2038), Child A birth through age 11, matching the prior version's window | $578,056 | $743,348 |
+| 12-year window (2027-2038), Child A birth through age 11 | $578,056 | $743,348 |
 | **18-year window (2027-2044), Child A birth through age 17 (full scope of this document)** | **$792,318** | **$1,085,649** |
-
-- **Reconciliation with the prior version's 12-year cumulative total:** the prior version reported $405,600 (today's $) / $522,342 (nominal $) for the same 2027-2038 window, covering only childcare, health premium, and a flat $300-$600/month "baseline living increase" placeholder. This version's 12-year total ($578,056 / $743,348) is higher because the flat placeholder has been replaced by the itemized, USDA-sourced food, clothing, and entertainment/activities figures (Sections 4-7), which are more granular and, particularly for the food category in the school-age and teen bands, higher than the flat placeholder implied. The childcare and health-premium figures themselves are unchanged and were re-verified to sum identically to the prior version's reported totals ($278,400 today's $ / $365,735 nominal $ for childcare; $48,000 today's $ / $58,886 nominal $ for health premium, both over the same 12-year window).
 
 #### Cumulative Total by Category, Full 18-Year Window (2027-2044)
 
@@ -433,7 +411,7 @@ This section covers the main scope gap in the prior version of this document, wh
 
 - Housing and mortgage costs (see `03-home-affordability/README.md`).
 - The Seattle condo carrying cost (see `05-seattle-condo-decision/README.md`).
-- Adult/household-level baseline living expenses (groceries, transportation, phone, personal care for the two adults) and the adults' own vacation budget, both of which are being built out in Part 1 (Adult Budget), above. The prior version of this document included a flat, non-age-banded "baseline living increase attributable to children" line ($300/month for one child, $600/month for two); that line item is superseded by the itemized food, clothing, and entertainment/activities figures in Sections 4-7 of this document and should not be added on top of them, to avoid double-counting.
+- Adult/household-level baseline living expenses (groceries, transportation, phone, personal care for the two adults) and the adults' own vacation budget, both of which are covered in Part 1 (Adult Budget), above, not here (avoid double-counting by not adding a separate baseline-living line here on top of Sections 4-7's itemized figures).
 - College costs and any costs incurred after age 17, consistent with the standard USDA reference's own scope (Section 4).
 - Costs of pregnancy, childbirth, or adoption.
 - The value of parental time, forgone career earnings, or other indirect costs of child-rearing.
@@ -444,7 +422,7 @@ This section covers the main scope gap in the prior version of this document, wh
 
 - U.S. Department of Agriculture, Center for Nutrition Policy and Promotion, *Expenditures on Children by Families, 2015* (Mark Lino, Kevin Kuczynski, Nestor Rodriguez, TusaRebecca Schap; Miscellaneous Publication No. 1528-2015, January 2017, revised March 2017), Table 3 (Urban West region, married-couple families, before-tax income over $107,400): https://fns-prod.azureedge.us/sites/default/files/resource-files/crc2015-march2017.pdf
 - in2013dollars.com, CPI Inflation Calculator (built on BLS CPI-U data), cumulative inflation 2015-2026 (~41.4%), accessed July 2026: https://www.in2013dollars.com/us/inflation/2015
-- daycarecostguide.com, childcarecost.org, daycarecalc.com, nannylane.com, care.com: Multnomah County / Portland childcare, nanny, and after-school care rates, 2026 (carried forward from the prior version of this document)
+- daycarecostguide.com, childcarecost.org, daycarecalc.com, nannylane.com, care.com: Multnomah County / Portland childcare, nanny, and after-school care rates, 2026
 - Multnomah County "Preschool for All" program (noted qualitatively, not quantified into the modeled figures)
 - KFF (Kaiser Family Foundation), 2025 Employer Health Benefits Survey: https://www.kff.org/health-costs/2025-employer-health-benefits-survey/
 - eHealth and moneygeek.com, 2026 summaries of employer health plan child-dependent cost increments
@@ -459,8 +437,4 @@ This section covers the main scope gap in the prior version of this document, wh
 - SummerCamps.com, "Cost of Overnight Summer Camp" and "Summer Camp Cost Ultimate Guide," 2026: https://www.summercamps.com/cost-of-overnight-summer-camp/
 - Aspen Institute Project Play, "Family spending on youth sports rises 46% over five years," February 24, 2025: https://projectplay.org/news/2025/2/24/project-play-survey-family-spending-on-youth-sports-rises-46-over-five-years
 - U.S. Bureau of Transportation Statistics, "2025 Annual Average Domestic Air Fare Decreases from 2024": https://www.bts.gov/newsroom/2025-annual-average-domestic-air-fare-decreases-2024
-
-### Method Notes
-
-This document carries forward the prior version's compliance with `shared/known-modeling-issues.md` issues 2 (2-year gap modeled as one infant plus one preschooler at peak, never two infants), 6 (health insurance premium included as an explicit line), 17 (childcare labeled as center-based, with nanny/nanny-share given as a costlier, explicitly labeled alternative not built into totals), 18 (cumulative, not just peak-month, cost is shown), 19 (external estimates checked against current, cited sources, and labeled where a precise figure was not available), and 20 (neutral prose throughout, no persuasive or advice-toned framing). It extends issue 13 (costs should scale with child count and, implicitly, child age) by replacing the prior version's flat, non-age-banded child-cost placeholder with itemized, age-banded, sourced figures for food, clothing, and entertainment/activities, and adds camp, sports, and vacation-increment categories that did not exist in the prior version at all. Every new external data point is cited with a source name and date. Where a precise figure was not available (the kids'-activity vacation add-on in Section 7.3, the camp-weeks-per-summer and post-age-11-childcare-tapering assumptions in Sections 2 and 7.1), this is stated explicitly as a reasoned estimate rather than presented as sourced.
 

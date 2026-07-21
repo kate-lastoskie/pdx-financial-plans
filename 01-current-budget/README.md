@@ -2,14 +2,7 @@
 
 *A fillable spreadsheet version of this template is also available: [`current-budget.xlsx`](./current-budget.xlsx).*
 
-## Methodology (why this template looks this way)
-
-A few things research on couple budgeting converges on, which shaped this template:
-
-- **Cadence:** monthly, with a short recurring "money date" (15-20 min) to review it together. Monthly is granular enough to catch problems without becoming a chore.
-- **Structure: hybrid joint + personal.** The most common setup for couples now is a shared account/budget for household bills and goals, plus a personal "fun money" allowance each person can spend with zero questions asked. This is consistently the biggest lever for reducing money arguments - you don't need to itemize each other's coffee runs.
-- **Method: zero-based, loosely following 50/30/20 as a sanity check.** Every dollar of income gets assigned somewhere (needs, wants, savings/goals) so nothing "disappears." 50/30/20 (50% needs, 30% wants, 20% savings) is used below as a rough benchmark, not a hard rule - with two big savings goals (house + wedding) you'll likely want savings well above 20%.
-- **Category granularity: 15-25 categories, split only where it changes a decision.** Concretely: dining out is split out from groceries (one's stable/necessary, the other's variable/discretionary, and lumping them hides the thing you actually want to see). Broader "experiences"/entertainment stays as one line unless a specific sub-area is clearly a problem - you don't need "movies," "concerts," and "hobbies" as separate lines unless one of those is out of control.
+Monthly zero-based budget for shared household expenses, savings goals, and individual fun money.
 
 ## 1. Income (take-home / after-tax, monthly)
 
@@ -55,8 +48,8 @@ A few things research on couple budgeting converges on, which shaped this templa
 
 | Category | Monthly Amount | Notes |
 |---|---|---|
-| Dining out / takeout | $ | kept separate from groceries on purpose |
-| Entertainment & experiences (movies, concerts, hobbies, outings) | $ | one line unless a sub-area is clearly a problem |
+| Dining out / takeout | $ | |
+| Entertainment & experiences (movies, concerts, hobbies, outings) | $ | split out a sub-area only if it becomes a problem |
 | Subscriptions (streaming, apps, memberships) | $ | |
 | Travel / vacation (monthly average) | $ | |
 | Gifts (holidays, birthdays, etc.) | $ | |
@@ -70,7 +63,7 @@ A few things research on couple budgeting converges on, which shaped this templa
 |---|---|---|
 | Monthly personal allowance | $ | $ |
 
-*This is the one category each of you spends freely without justifying to the other - covers whatever isn't worth tracking line-by-line (coffee, a solo purchase, etc.).*
+*Spend freely - covers whatever isn't worth tracking line-by-line (coffee, a solo purchase, etc.).*
 
 ## 6. Zero-Based Check
 
